@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news.kamocodes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Enable class-based dark mode in Tailwind CSS
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Montserrat', sans-serif; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      .line-clamp-2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .line-clamp-3 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+      @keyframes shimmer {
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .shimmer-bg {
+        position: relative;
+        overflow: hidden;
+        background-color: #e2e8f0; /* bg-gray-200 */
+      }
+      .dark .shimmer-bg {
+        background-color: #1f2937; /* dark:bg-gray-800 */
+      }
+      .shimmer-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0,
+          rgba(255, 255, 255, 0.2) 20%,
+          rgba(255, 255, 255, 0.4) 60%,
+          rgba(255, 255, 255, 0)
+        );
+        animation: shimmer 1s infinite;
+      }
+      .dark .shimmer-bg::after {
+        background-image: linear-gradient(
+          90deg,
+          rgba(107, 114, 128, 0) 0,
+          rgba(107, 114, 128, 0.2) 20%,
+          rgba(107, 114, 128, 0.5) 60%,
+          rgba(107, 114, 128, 0)
+        );
+      }
+    </style>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+  // FOUC Prevention Script
+  (function() {
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (_) {}
+  })();
+</script>
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-1zFGWoLe.js"></script>
+</head>
+  <body class="bg-gray-50 dark:bg-black transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
