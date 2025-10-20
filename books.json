@@ -1,0 +1,18 @@
+[
+  {
+    "id": "book_1",
+    "title": "The Little Robot's Big Discovery",
+    "summary": "A small robot named Bolt explores a vibrant, mechanical world and discovers the power of friendship and music.",
+    "category": "Sci-Fi",
+    "content": "In the gleaming city of Cogsworth, where every gear and piston moved in perfect harmony, lived a small robot named Bolt. Bolt's job was to polish the city's central gear, a task he performed with diligence but little joy. One day, a strange, rhythmic clanking echoed from a forgotten alley. Curious, Bolt followed the sound and found an old, discarded music box. As he wound it up, a beautiful melody filled the air, a sound unlike any of the city's monotonous hums. The music made his circuits tingle with a new feeling. He shared his discovery with other robots, and soon, the rigid city was filled with dance, song, and the wonderful chaos of creativity.",
+    "coverImageUrl": "https://source.unsplash.com/800x1280/?robot,cute,vintage"
+  },
+  {
+    "id": "book_2",
+    "title": "The Star That Lost Its Twinkle",
+    "summary": "A young star falls from the sky and must journey through a whimsical forest to find its way back home.",
+    "category": "Fantasy",
+    "content": "Lyra was a tiny star, content with her place in the vast, velvety night sky. But one night, a playful cosmic gust whisked her from her constellation, sending her tumbling down to an unfamiliar world. She landed softly in a forest shimmering with glowing moss and whispering trees. Scared but determined, Lyra began her journey to return home. Along the way, she met a wise old owl who navigated by the stars' reflections in puddles and a mischievous fox who taught her to follow the moon's path. With their help, Lyra learned that even when you are small and lost, the light of friendship can guide you back to where you belong.",
+    "coverImageUrl": "https://source.unsplash.com/800x1280/?fantasy,forest,stars"
+  }
+]
